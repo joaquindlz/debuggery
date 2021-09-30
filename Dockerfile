@@ -1,6 +1,6 @@
-FROM alpine:3.8
+FROM alpine:3.14
 
-LABEL maintainer="Rameez Khan"
+LABEL maintainer="Joaquín de la Zerda"
 
 RUN set -ex \
     && echo "http://nl.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories \
@@ -10,12 +10,16 @@ RUN set -ex \
     && apk add --no-cache \
     apache2-utils \
     bash \
+    bind‑tools \
     busybox-extras \
     curl \
     git \
     hping3 \
+    kubectl \
+    kubectl-zsh-completion \
     nmap \
     postgresql-client \
+    telnet \
     tcptraceroute \
     vim \
     zsh 
