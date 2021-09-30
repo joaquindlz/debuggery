@@ -10,7 +10,7 @@ RUN set -ex \
     && apk add --no-cache \
     apache2-utils \
     bash \
-    bind‑tools \
+    bind-tools \
     busybox-extras \
     curl \
     git \
@@ -19,7 +19,6 @@ RUN set -ex \
     kubectl-zsh-completion \
     nmap \
     postgresql-client \
-    telnet \
     tcptraceroute \
     vim \
     zsh 
